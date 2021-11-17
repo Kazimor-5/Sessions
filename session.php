@@ -46,6 +46,8 @@
                 echo "Computer wins <br>";
             }
         }
+        echo "You've chosen: $userChoice <br>";
+        echo "Computer has chosen: $CPU <br>";
     }
 ?>
 
@@ -58,8 +60,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a name="logout" href="./deconnexion.php">LogOut</a>
-
     <form action="./session.php" method="POST">
         <select name="choice" id="choice">
             <option value="">---Choose an option---</option>
@@ -67,9 +67,10 @@
             <option value="paper">Paper</option>
             <option value="scissors">Scissors</option>
         </select>
-
         <button type="submit" name="submit">Submit</button>
     </form>
+
+    <a name="logout" href="./deconnexion.php">LogOut</a>
 </body>
 </html>
 
