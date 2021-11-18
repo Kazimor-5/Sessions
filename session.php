@@ -21,8 +21,6 @@
     ];
     shuffle($computerChoice);
     $CPU = $computerChoice[0];
-    // var_dump($computerChoice);
-    // var_dump($CPU);
 
     if(isset($_POST["submit"])){
         if($userChoice === $CPU){
